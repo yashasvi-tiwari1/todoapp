@@ -1,5 +1,6 @@
 package com.example.todoapp.Adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +36,7 @@ private MainActivity activity;
     }
     @Override
     public int getItemCount() {
+        Log.d( "CheckBox", "getItemCount: +"+todoList.size());
         return todoList.size();
     }
     private  boolean toBoolean(int n){
